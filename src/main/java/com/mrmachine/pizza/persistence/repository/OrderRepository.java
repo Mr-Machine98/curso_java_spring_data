@@ -23,6 +23,9 @@ public interface OrderRepository extends ListCrudRepository<OrderEntity, Integer
 	@Query(value = "SELECT * FROM pizza_order WHERE id_customer = :id", nativeQuery = true)
 	List<OrderEntity> findCustomerOrders( @Param("id") String idCustomer);
 	
+	/*
+	 * Clic en OrdenSummary para entender este metodo
+	 * */
 	@Query(value = "SELECT   "
 			+ "		po.id_order AS idOrder,  "
 			+ "		cu.name AS customerName,  "

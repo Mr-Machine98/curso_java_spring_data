@@ -47,6 +47,8 @@ public class OrderService {
 	/*
 	 * Encontrar una informacion utilizando una proyeccion ir al repositorio clic en
 	 * el objetoSumary para la explicacion
+	 * 
+	 * proyeccion e sigual que un DTO
 	 */
 	public OrderSummary getSummary(Integer orderId) {
 		return this.orderRepo.findSummary(orderId);
